@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 80" fill="none">
+  <defs>
+    <!-- Outer metallic ring gradient -->
+    <linearGradient id="ring-outer" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c8d0d8"/>
+      <stop offset="25%" stop-color="#e8edf2"/>
+      <stop offset="50%" stop-color="#9aa5b0"/>
+      <stop offset="75%" stop-color="#d0d8e0"/>
+      <stop offset="100%" stop-color="#7a8a98"/>
+    </linearGradient>
+    <!-- Inner dark background -->
+    <radialGradient id="bg-inner" cx="38%" cy="32%" r="68%">
+      <stop offset="0%" stop-color="#2e3c46"/>
+      <stop offset="100%" stop-color="#18262e"/>
+    </radialGradient>
+    <!-- Green S gradient -->
+    <linearGradient id="s-color" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5aaa78"/>
+      <stop offset="100%" stop-color="#1e6e3a"/>
+    </linearGradient>
+    <!-- Silver I gradient -->
+    <linearGradient id="i-color" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a0aab4"/>
+      <stop offset="50%" stop-color="#d8e0e8"/>
+      <stop offset="100%" stop-color="#8a96a2"/>
+    </linearGradient>
+    <!-- Ball gradient -->
+    <radialGradient id="ball" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#e0e8f0"/>
+      <stop offset="100%" stop-color="#7a8a98"/>
+    </radialGradient>
+    <!-- Green accent arc -->
+    <linearGradient id="arc-color" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2e7d32"/>
+      <stop offset="100%" stop-color="#4caf50"/>
+    </linearGradient>
+    <!-- Drop shadow filter -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.4)"/>
+    </filter>
+  </defs>
+
+  <!-- Outer ring -->
+  <circle cx="40" cy="40" r="37" fill="url(#ring-outer)" filter="url(#shadow)"/>
+  <!-- Inner dark circle -->
+  <circle cx="40" cy="40" r="31" fill="url(#bg-inner)"/>
+
+  <!-- Green S shape - stylized curve -->
+  <path d="M28 26 C28 22 32 19 37 20 C42 21 45 25 43 29 C41 32 36 33 33 36 C29 39 28 43 31 47 C34 51 40 52 45 50 C49 48 51 45 50 42"
+        stroke="url(#s-color)" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- Bottom green accent arc -->
+  <path d="M22 52 Q30 60 40 58" stroke="url(#arc-color)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Vertical I bar -->
+  <rect x="47" y="22" width="3" height="34" rx="1.5" fill="url(#i-color)"/>
+  <!-- I bottom serif -->
+  <rect x="43" y="53" width="11" height="2.5" rx="1.2" fill="url(#i-color)"/>
+
+  <!-- Top ball/sphere -->
+  <circle cx="48.5" cy="17" r="5" fill="url(#ball)" filter="url(#shadow)"/>
+
+  <!-- Company name text -->
+  <text x="95" y="36" font-family="Inter,Helvetica Neue,Arial,sans-serif" font-size="26" font-weight="300" letter-spacing="0.5" fill="#555e68">Spets Instal</text>
+  <text x="95" y="56" font-family="Inter,Helvetica Neue,Arial,sans-serif" font-size="11" font-weight="400" letter-spacing="2.5" fill="#9aa5b0">МОНТАЖ МЕРЕЖ</text>
+</svg>
